@@ -6,8 +6,9 @@
 ##but first checks to see if the same matrix is in the cache and uses that 
 ##result if it is.  
 
-## Write a short comment describing this function
-
+##The makeCacheMatrix function really does 4 things.  It creates a special 
+##matrix and enables you to set and retrive the matrix from it and to set 
+##and retreive the inverse matrix from it.
 makeCacheMatrix <- function(x = matrix()) {
     im <- NULL
     set <- function(y) {
