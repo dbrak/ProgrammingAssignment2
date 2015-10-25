@@ -24,8 +24,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+##The following function uses the first function to solve for the inverse of a 
+##matrix.  It before calling the solve function, it will check the cache to see
+##if the the matrix has been solved before.  If it has, it will return the 
+##value from the cache.
 cacheSolve <- function(x, ...) {
     im <- x$getInverseMatrix()
     if(!is.null(im)) {
